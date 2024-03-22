@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LoginPage</string>
+    <string-array name="mode_of_transportation">
+        <item>"     " Select the mode of Transport:</item>
+        <item>Car</item>
+        <item>Bus</item>
+        <item>Train</item>
+        <item>Plane</item>
+    </string-array>
+</resources>

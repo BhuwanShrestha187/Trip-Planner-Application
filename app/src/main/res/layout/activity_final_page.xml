@@ -1,0 +1,125 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".finalPage">
+
+    <ImageView
+        android:id="@+id/bannerImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banner_picture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/thankYouText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:padding="15dp"
+        android:text="THANK YOU FOR CHOOSING US"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toBottomOf="@+id/bannerImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:background="@color/lightSkyBlue"
+        app:layout_constraintStart_toStartOf="@+id/thankYouText"
+        app:layout_constraintTop_toBottomOf="@+id/thankYouText"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="You can download your trip details from here: "
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:background="@color/light_grey"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/downloadButton"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Download your Trip Details"
+            android:background="@drawable/button_background"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:rating="0"
+            android:stepSize="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/thankYouText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <TextView
+            android:id="@+id/reviewThankYouText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:text="Thank you for the review!!!"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imageHolder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/faceBookImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openFacebook"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/instagramImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openInstagram"
+            android:src="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/gmailImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openGmail"
+            android:src="@drawable/gmail" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

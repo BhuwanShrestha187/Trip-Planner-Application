@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightSkyBlue"
+    >
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/banner_picture"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Services:"
+        android:textStyle="bold|italic"
+        android:paddingLeft="14dp"
+        android:textSize="24sp"
+        android:background="@color/yellow"/>
+    <GridView
+        android:id="@+id/simpleGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        />
+
+
+</LinearLayout>
